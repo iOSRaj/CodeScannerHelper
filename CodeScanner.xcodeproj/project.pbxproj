@@ -12,6 +12,7 @@
 		1B1DD9841D9162E700351D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD9821D9162E700351D92 /* Main.storyboard */; };
 		1B1DD9861D9162E700351D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD9851D9162E700351D92 /* Assets.xcassets */; };
 		1B1DD9891D9162E700351D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD9871D9162E700351D92 /* LaunchScreen.storyboard */; };
+		1B1DD9911D91636800351D92 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD9901D91636800351D92 /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1B1DD9851D9162E700351D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1DD9881D9162E700351D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B1DD98A1D9162E700351D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B1DD9901D91636800351D92 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = ../ScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1B1DD97D1D9162E700351D92 /* CodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				1B1DD9901D91636800351D92 /* ScannerViewController.swift */,
 				1B1DD97E1D9162E700351D92 /* AppDelegate.swift */,
 				1B1DD9801D9162E700351D92 /* ViewController.swift */,
 				1B1DD9821D9162E700351D92 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					1B1DD97A1D9162E700351D92 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L2UZ78ZJAN;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1DD9811D9162E700351D92 /* ViewController.swift in Sources */,
+				1B1DD9911D91636800351D92 /* ScannerViewController.swift in Sources */,
 				1B1DD97F1D9162E700351D92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +254,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.klm.CodeScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klm.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -260,9 +266,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.klm.CodeScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.klm.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +293,7 @@
 				1B1DD98F1D9162E700351D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

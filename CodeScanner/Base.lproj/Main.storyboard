@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vjr-LK-ZKM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CodeScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-d9-jPt">
+                                <rect key="frame" x="259" y="285" width="83" height="30"/>
+                                <state key="normal" title="Scan Codes"/>
+                                <connections>
+                                    <action selector="scannerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeB-lO-Wxc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Results will appear here after scanning" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0U-jx-PYv">
+                                <rect key="frame" x="20" y="358" width="560" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="bRj-b9-q5p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ahV-d9-jPt" firstAttribute="centerX" secondItem="z0U-jx-PYv" secondAttribute="centerX" id="0m3-mT-m0z"/>
+                            <constraint firstItem="ahV-d9-jPt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1SD-Hu-jlq"/>
+                            <constraint firstAttribute="trailing" secondItem="z0U-jx-PYv" secondAttribute="trailing" constant="20" id="AdH-XH-wIf"/>
+                            <constraint firstItem="z0U-jx-PYv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RRZ-GK-0fA"/>
+                            <constraint firstItem="z0U-jx-PYv" firstAttribute="top" secondItem="ahV-d9-jPt" secondAttribute="bottom" constant="43" id="UyE-w6-zFL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JF7-Kd-40P"/>
+                    <connections>
+                        <outlet property="barcodeLabels" destination="z0U-jx-PYv" id="472-yJ-noU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1234" y="432"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="Tow-dy-74v">
+            <objects>
+                <viewController storyboardIdentifier="ScannerView" id="FMN-b9-LkG" customClass="ScannerViewController" customModule="CodeScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kHj-SX-o9R"/>
+                        <viewControllerLayoutGuide type="bottom" id="jQ8-9C-50y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Guo-jj-swH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2X1-lV-dDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="432"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AoN-Eo-wL7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vjr-LK-ZKM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YxN-1f-45N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="coi-qi-ZIL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2l-1b-5t9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="432"/>
         </scene>
     </scenes>
 </document>
