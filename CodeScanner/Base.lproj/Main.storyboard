@@ -55,7 +55,7 @@
         <!--Scanner View Controller-->
         <scene sceneID="Tow-dy-74v">
             <objects>
-                <viewController storyboardIdentifier="ScannerView" id="FMN-b9-LkG" customClass="ScannerViewController" customModule="CodeScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScannerView" id="FMN-b9-LkG" customClass="ScannerViewController" customModule="CodeScannerHelper" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kHj-SX-o9R"/>
                         <viewControllerLayoutGuide type="bottom" id="jQ8-9C-50y"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CodeScannerHelper
 
 class ViewController: UIViewController {
 

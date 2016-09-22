@@ -12,8 +12,36 @@
 		1B1DD9841D9162E700351D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD9821D9162E700351D92 /* Main.storyboard */; };
 		1B1DD9861D9162E700351D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD9851D9162E700351D92 /* Assets.xcassets */; };
 		1B1DD9891D9162E700351D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD9871D9162E700351D92 /* LaunchScreen.storyboard */; };
-		1B1DD9911D91636800351D92 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD9901D91636800351D92 /* ScannerViewController.swift */; };
+		1BAB95831D93D9D700FAB2FD /* CodeScannerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BAB95821D93D9D700FAB2FD /* CodeScannerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BAB95871D93D9D700FAB2FD /* CodeScannerHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAB95801D93D9D700FAB2FD /* CodeScannerHelper.framework */; };
+		1BAB95881D93D9D700FAB2FD /* CodeScannerHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAB95801D93D9D700FAB2FD /* CodeScannerHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BAB95901D93DCE300FAB2FD /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB958F1D93DCE300FAB2FD /* ScannerViewController.swift */; };
+		1BAB95951D93DFDC00FAB2FD /* CodeScannerHelper.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1BAB95941D93DFDC00FAB2FD /* CodeScannerHelper.podspec */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BAB95851D93D9D700FAB2FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B1DD9731D9162E700351D92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BAB957F1D93D9D700FAB2FD;
+			remoteInfo = CodeScannerHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BAB958C1D93D9D700FAB2FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1BAB95881D93D9D700FAB2FD /* CodeScannerHelper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B1DD97B1D9162E700351D92 /* CodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,11 +51,23 @@
 		1B1DD9851D9162E700351D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1DD9881D9162E700351D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B1DD98A1D9162E700351D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B1DD9901D91636800351D92 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = ../ScannerViewController.swift; sourceTree = "<group>"; };
+		1BAB95801D93D9D700FAB2FD /* CodeScannerHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeScannerHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAB95821D93D9D700FAB2FD /* CodeScannerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeScannerHelper.h; sourceTree = "<group>"; };
+		1BAB95841D93D9D700FAB2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAB958F1D93DCE300FAB2FD /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = ScannerClass/ScannerViewController.swift; sourceTree = SOURCE_ROOT; };
+		1BAB95941D93DFDC00FAB2FD /* CodeScannerHelper.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeScannerHelper.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1B1DD9781D9162E700351D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAB95871D93D9D700FAB2FD /* CodeScannerHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BAB957C1D93D9D700FAB2FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				1B1DD97D1D9162E700351D92 /* CodeScanner */,
+				1BAB95811D93D9D700FAB2FD /* CodeScannerHelper */,
 				1B1DD97C1D9162E700351D92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				1B1DD97B1D9162E700351D92 /* CodeScanner.app */,
+				1BAB95801D93D9D700FAB2FD /* CodeScannerHelper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,7 +98,8 @@
 		1B1DD97D1D9162E700351D92 /* CodeScanner */ = {
 			isa = PBXGroup;
 			children = (
-				1B1DD9901D91636800351D92 /* ScannerViewController.swift */,
+				1BAB95941D93DFDC00FAB2FD /* CodeScannerHelper.podspec */,
+				1BAB958E1D93DC7800FAB2FD /* ScannerClass */,
 				1B1DD97E1D9162E700351D92 /* AppDelegate.swift */,
 				1B1DD9801D9162E700351D92 /* ViewController.swift */,
 				1B1DD9821D9162E700351D92 /* Main.storyboard */,
@@ -67,7 +110,35 @@
 			path = CodeScanner;
 			sourceTree = "<group>";
 		};
+		1BAB95811D93D9D700FAB2FD /* CodeScannerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1BAB95821D93D9D700FAB2FD /* CodeScannerHelper.h */,
+				1BAB95841D93D9D700FAB2FD /* Info.plist */,
+			);
+			path = CodeScannerHelper;
+			sourceTree = "<group>";
+		};
+		1BAB958E1D93DC7800FAB2FD /* ScannerClass */ = {
+			isa = PBXGroup;
+			children = (
+				1BAB958F1D93DCE300FAB2FD /* ScannerViewController.swift */,
+			);
+			path = ScannerClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BAB957D1D93D9D700FAB2FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAB95831D93D9D700FAB2FD /* CodeScannerHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1B1DD97A1D9162E700351D92 /* CodeScanner */ = {
@@ -77,15 +148,35 @@
 				1B1DD9771D9162E700351D92 /* Sources */,
 				1B1DD9781D9162E700351D92 /* Frameworks */,
 				1B1DD9791D9162E700351D92 /* Resources */,
+				1BAB958C1D93D9D700FAB2FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1BAB95861D93D9D700FAB2FD /* PBXTargetDependency */,
 			);
 			name = CodeScanner;
 			productName = CodeScanner;
 			productReference = 1B1DD97B1D9162E700351D92 /* CodeScanner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1BAB957F1D93D9D700FAB2FD /* CodeScannerHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BAB95891D93D9D700FAB2FD /* Build configuration list for PBXNativeTarget "CodeScannerHelper" */;
+			buildPhases = (
+				1BAB957B1D93D9D700FAB2FD /* Sources */,
+				1BAB957C1D93D9D700FAB2FD /* Frameworks */,
+				1BAB957D1D93D9D700FAB2FD /* Headers */,
+				1BAB957E1D93D9D700FAB2FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeScannerHelper;
+			productName = CodeScannerHelper;
+			productReference = 1BAB95801D93D9D700FAB2FD /* CodeScannerHelper.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +189,10 @@
 				ORGANIZATIONNAME = Raj;
 				TargetAttributes = {
 					1B1DD97A1D9162E700351D92 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L2UZ78ZJAN;
+					};
+					1BAB957F1D93D9D700FAB2FD = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = L2UZ78ZJAN;
 					};
@@ -117,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				1B1DD97A1D9162E700351D92 /* CodeScanner */,
+				1BAB957F1D93D9D700FAB2FD /* CodeScannerHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +228,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BAB957E1D93D9D700FAB2FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAB95951D93DFDC00FAB2FD /* CodeScannerHelper.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,12 +244,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1DD9811D9162E700351D92 /* ViewController.swift in Sources */,
-				1B1DD9911D91636800351D92 /* ScannerViewController.swift in Sources */,
 				1B1DD97F1D9162E700351D92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BAB957B1D93D9D700FAB2FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAB95901D93DCE300FAB2FD /* ScannerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BAB95861D93D9D700FAB2FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BAB957F1D93D9D700FAB2FD /* CodeScannerHelper */;
+			targetProxy = 1BAB95851D93D9D700FAB2FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1B1DD9821D9162E700351D92 /* Main.storyboard */ = {
@@ -255,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klm.;
@@ -267,10 +387,56 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CodeScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klm.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1BAB958A1D93D9D700FAB2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CodeScannerHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klm.CodeScannerHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BAB958B1D93D9D700FAB2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CodeScannerHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klm.CodeScannerHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -294,6 +460,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1BAB95891D93D9D700FAB2FD /* Build configuration list for PBXNativeTarget "CodeScannerHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BAB958A1D93D9D700FAB2FD /* Debug */,
+				1BAB958B1D93D9D700FAB2FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
