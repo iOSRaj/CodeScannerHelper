@@ -15,8 +15,6 @@ public class ScannerViewController: UIViewController, AVCaptureMetadataOutputObj
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var captureDevice: AVCaptureDevice?
 
-    var capturedCode: String?
-
     public var scannedBarCode: ((String) -> ())?
 
     private var allowedTypes = [AVMetadataObjectTypeUPCECode,

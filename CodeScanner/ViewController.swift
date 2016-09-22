@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func scannerView(sender: AnyObject) {
         barcodeScanner = self.storyboard!.instantiateViewControllerWithIdentifier("ScannerView") as? ScannerViewController
-        barcodeScanner?.title = "Scan Pass"
+        barcodeScanner?.title = "Scan Details"
 
         if let barcodeScanner = self.barcodeScanner {
             self.navigationController?.pushViewController(barcodeScanner, animated: true)
