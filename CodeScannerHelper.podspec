@@ -4,12 +4,12 @@ s.version          = '1.0.0'
 s.summary          = 'CodeScannerHelper pod to scan all the BarcodeTypes'
 
 s.description      = <<-DESC
-CodeScannerHelper pod for use with  swift projects
+CodeScannerHelper pod for use with KLM swift projects
 DESC
 
 s.homepage         = 'https://stash.eden.klm.com/projects/MOBILE/repos/CodeScanner'
-s.license          = "Raj"
-s.author           = { 'Raj' => 'rajkumargkr@gmail.com' }
+s.license          = "KLM"
+s.author           = { 'Raj' => '336699@gmail.com' }
 s.source           = { :git => 'https://github.com/iOSRaj/CodeScannerHelper.git', :tag => s.version }
 
 s.ios.deployment_target = '8.0'
